@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace AzeriPatates {
+namespace AzeriPatates.Environment {
     public class MovablePlatform : MonoBehaviour {
-        [SerializeField] private float _moveTime = 3.0f;
-        [SerializeField] private Vector3 offset;
+
+
+        [field: SerializeField] private float _moveTime { get; set; } = 3.0f;
+        [field:SerializeField] private Vector3 offset { get; set; }
+
+
         private Rigidbody _rigidbody;
         private Vector3 _startPosition;
         private Vector3 _targetPosition;

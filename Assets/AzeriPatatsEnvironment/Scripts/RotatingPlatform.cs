@@ -1,26 +1,20 @@
 using UnityEngine;
 
-namespace Azeripatates.Environment
-{
-    public class RotatingPlatform : MonoBehaviour
-    {
-       [field:SerializeField] private int rotationSpeed { get; set; }
-       [SerializeField] private Vector3 rotationAngle;
+namespace Azeripatates.Environment {
+    public class RotatingPlatform : MonoBehaviour {
+        [field: SerializeField] private Vector3 rotateSpeed { get; set; }
+
         private Rigidbody _rigidbody;
-        private float angle;
+        private Vector3 rotateAngle;
+
         private void Start() {
             _rigidbody = GetComponent<Rigidbody>();
-       }
+            rotateAngle = gameObject.transform.eulerAngles;
+        }
         private void FixedUpdate() {
-             angle += rotationSpeed * Time.deltaTime;
-             var rotation = Quaternion.Euler((rotationAngle+ rotationAngle)*rotationSpeed*Time.deltaTime);
+            rotateAngle += rotateSpeed * Time.deltaTime;
+            var rotation = Quaternion.Euler(rotateAngle);
             _rigidbody.MoveRotation(rotation);
         }
-        //public void FixedUpdate() {
-        //    var t = -0.5f * (Mathf.Cos(Mathf.PI * Mathf.PingPong(Time.time, _moveTime) / _moveTime) - 1.0f);
-        //    var p = Vector3.Lerp(_startPosition, _targetPosition, t);
-        //    _rigidbody.MovePosition(p);
-        //}
-
     }
 }
