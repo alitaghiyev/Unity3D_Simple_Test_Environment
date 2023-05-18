@@ -6018,7 +6018,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4012087882352818470}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -17208,7 +17208,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4012087882953059515}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -21580,7 +21580,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4012087883288931764}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -55321,6 +55321,10 @@ PrefabInstance:
       propertyPath: offset.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4633840596184518472, guid: 69e3dc75d1fe86843b038fe4bbcc36e6, type: 3}
+      propertyPath: <offset>k__BackingField.y
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4633840596184518476, guid: 69e3dc75d1fe86843b038fe4bbcc36e6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -55562,6 +55566,14 @@ PrefabInstance:
     - target: {fileID: 4633840596184518472, guid: 69e3dc75d1fe86843b038fe4bbcc36e6, type: 3}
       propertyPath: offset.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633840596184518472, guid: 69e3dc75d1fe86843b038fe4bbcc36e6, type: 3}
+      propertyPath: <offset>k__BackingField.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633840596184518472, guid: 69e3dc75d1fe86843b038fe4bbcc36e6, type: 3}
+      propertyPath: <_moveTime>k__BackingField
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4633840596184518476, guid: 69e3dc75d1fe86843b038fe4bbcc36e6, type: 3}
       propertyPath: m_RootOrder
